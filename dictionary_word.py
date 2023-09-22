@@ -27,7 +27,7 @@ dictionary = {
     'z': ["Zany","Zephyr","Zebra","Zappy","Zigzag","Zenith","Zesty","Zeal","Zarf","Zingy","Zilch","Zealous"]
 }
 
-def search_word(letter):
+def search_words(letter):
     return dictionary.get(letter.lower())
 
 while True:
@@ -37,5 +37,5 @@ while True:
         print("GoodBye___Thank You")
         break
 
-    words = search_word(user_input)
+    words = search_words(user_input)
     print("\n",str(words).replace('[',' ').replace(']',' ').replace("\'",' '),"\n")
