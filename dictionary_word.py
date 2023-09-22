@@ -1,5 +1,5 @@
 dictionary = {
-    'a': ["Alive","Avid","Abecedarian","Affable","Adventurous","Acerbic","Adept","Admirable","Angelic","Animation","Acclaim","Adaptable",],
+    'a': ["Alive","Avid","Abecedarian","Affable","Adventurous","Acerbic","Adept","Admirable","Angelic","Animation","Acclaim","Adaptable"],
     'b': ["Balmy","Brave","Beautiful","Benevolent","Baggy","Babka","Beat","Blessed","Bashful","Banal","Beaming","Boisterous"],
     'c': ["Clean","Clear","Capable","Careful","Civil","Complex","Content","Charming","Clever","Certain","Cabal","Caring"],
     'd': ["Daisy","Daily","Dandy","Dally","Daffy","Dazed","Davit","Darcy","Daman","Damar","Daric","Doubt"],
@@ -7,7 +7,7 @@ dictionary = {
     'f': ["fable","faced","facer","faces","facet","facia","fabada","fabled","fabler","fables","fabric","facade"],
     'g': ["Gain","Giddy","Gaudy","Giant","Gate","Gaffe","Gale","Goofy","Gabby","Gamut","Godly","Goose"],
     'h': ["Happiness","Hair","Hardy","Handy","Heavy","Halcyon","Hadji","Hajji","Hamza","Hammy","Haggard","Hafiz"],
-    'i"': ["index","image","inlet","igloo","ideal","idiom","iambs","ichor","icily","idols","ilium","imply"],
+    'i': ["index","image","inlet","igloo","ideal","idiom","iambs","ichor","icily","idols","ilium","imply"],
     'j': ["Jackpot","Jack","Jaded","Jazzy","Jewel","Jaunt","Jab","Jabber","Jiffy","Jacky","Jammy","Jaggy"],
     'k': ["Key","Kennel","Kit","Knee","Keyboard","Knot","Knob","Kiwi","Fruit","Kettle","Kelp","Knife","Kitchen"],
     'l': ["Lean","Level","Lace","Late","Laudable","Lavish","Laconic phrase","Lucky","Lame","Lanky","Lute","Lackadaisical"],
@@ -27,8 +27,8 @@ dictionary = {
     'z': ["Zany","Zephyr","Zebra","Zappy","Zigzag","Zenith","Zesty","Zeal","Zarf","Zingy","Zilch","Zealous"]
 }
 
-def search_word(word):
-    return dictionary.get(word.lower(), "Word Not Found.")
+def search_word(letter):
+    return dictionary.get(letter.lower())
 
 while True:
     user_input = input("Enter an alphabet to get its corresponding words ( or 'quit' to quit): ")
