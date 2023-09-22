@@ -34,8 +34,8 @@ while True:
     user_input = input("Enter an alphabet to get its corresponding words ( or 'quit' to quit): ")
     
     if user_input == "quit":
-        print("GoodBye")
+        print("GoodBye___Thank You")
         break
 
     words = search_word(user_input)
-    print(words,"\n")
+    print("\n",str(words).replace('[',' ').replace(']',' ').replace("\'",' '),"\n")
