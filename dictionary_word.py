@@ -31,20 +31,20 @@ def search_words(letter):
     return dictionary.get(letter.lower())
 
 while True:
-    user_input = input("\nEnter the characters to get its corresponding words and its meaning ( or 'Quit1' to quit): ")
+    user_input = input("\nEnter the characters to get its corresponding words and its meaning ( or 'Quit!' to quit): ")
 
-    if user_input.lower() == "quit1":
-        print("Good Bye------Thank You")
+    if user_input.lower() == "quit!":
+        print("Good Bye ------ Thank You")
         break
 
     words = search_words(user_input[0])
 
-    n = 0
+    check = False
     
     for element in words:
         if element[0:len(user_input)].lower() == user_input.lower():
-            print('\n',element,'\n')
-            n=1
+            print('\n',element)
+            check = True
 
-    if(n == 0) :
+    if(check == False) :
         print("\n Word Not Found In The Dicitionary.")
